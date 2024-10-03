@@ -96,3 +96,6 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('projectTicTacToe').addEventListener('click', function() {
     window.open('https://kimrv000.github.io/tic-tac-toe/', '_blank');
 });
+document.getElementById('projectPlantsStore').addEventListener('click', function() {
+    window.open('https://kimrv000.github.io/plants_store_react/', '_blank');
+});
