@@ -18,6 +18,7 @@
 }
 
 body {
+    width: 100%;
     background-color: #121212;
 }
 
@@ -43,6 +44,7 @@ header {
     background-color: #FCFCFC;
     width: 100%;
     height: 500px;
+    
 }
 
 .grey-font {
@@ -112,6 +114,7 @@ img {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,20 +255,20 @@ main {
     padding: 20px;
     border-radius: 20px;
     transition: width 0.5s ease, border-radius 0.5s ease;
-    
+
 }
 
-.projects_container:hover{
+.projects_container:hover {
     width: 100%;
     border-radius: 0;
 
 }
 
-.projects{
+.projects {
     display: flex;
     justify-content: space-around;
     position: relative;
-    width: 100%; 
+    width: 100%;
 }
 
 .project-container {
@@ -290,13 +293,13 @@ main {
     flex-direction: column;
     font-family: "Overpass Mono", monospace;
     padding: 10px;
-    visibility: visible; 
+    visibility: visible;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
 .project-text.visible {
-    visibility: visible; 
-    opacity: 1; 
+    visibility: visible;
+    opacity: 1;
 }
 
 
@@ -355,7 +358,12 @@ footer:hover {
     fill: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 855px) {
+
+    body{
+        width: 80vh;
+    }
+    
     .about_me_container {
         width: 100%;
     }
@@ -363,8 +371,182 @@ footer:hover {
     .grid_container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    header {
+        width: 80vh;
+        height: auto;
+    }
+
+    .grey-font {
+        font-size: 20px;
+    }
+
+    .black-font {
+        font-size: 40px;
+    }
+
+    img {
+        width: 298px;
+    }
+    
+.sections_container {
+    justify-content: space-evenly;
+    width: 70vh;
+    height: 60px;
+    background-color: #FCFCFC;
+    margin: 50px 0;
+    border-radius: 20px;
+    transition: width 0.5s ease, border-radius 0.5s ease;
+
 }
 
+.sections_container:hover {
+    width: 100%;
+    border-radius: 0;
+}
+
+.section {
+    font-family: "Overpass Mono", monospace;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+
+.section:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.about_me_container {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.about_me_section {
+    color: white;
+    width: 100%;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    margin-bottom: 50px;
+    font-family: "Overpass Mono", monospace;
+    font-size: medium;
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.5s ease, border-radius 0.5s ease;
+
+}
+
+.about_me_section:hover {
+    background-color: #FCFCFC;
+    color: black;
+    border-radius: 20px;
+}
+
+.about_me_text {
+    margin: 15px 10px 20px 10px;
+    color: #7C7A7A;
+}
+
+.location {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+
+}
+
+
+.projects_container {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 10px 50px;
+    border-radius: 0px;
+    transition: width 0.5s ease, border-radius 0.5s ease;
+
+}
+
+.projects_container:hover {
+    width: 100%;
+    border-radius: 0;
+
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+.project-container {
+    display: flex;
+    border-radius: 20px;
+    width: 300px;
+    height: 70%;
+    margin: 10px;
+    color: #121212;
+    font-size: 10px;
+}
+
+.project-img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    font-family: "Overpass Mono", monospace;
+    padding: 10px;
+    visibility: visible;
+}
+
+.project-text.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+}
+
+@media (max-width: 1420px) {
+    .projects_container {
+        width: 100%;
+        height: auto;
+        margin: 50px 0;
+        padding: 10px 50px;
+        border-radius: 0px;
+        transition: width 0.5s ease, border-radius 0.5s ease;
+    
+    }
+    
+    .projects_container:hover {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+}
 @media (max-width: 480px) {
     .grid_container {
         grid-template-columns: repeat(2, 1fr);
